@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    @import url('https://fonts.googleapis.com/css2?family=Dynalight&family=Gabarito&family=Inter:wght@400;500&family=Josefin+Sans&family=Kdam+Thmor+Pro&family=Lilita+One&family=Montserrat:wght@600&family=Nunito:ital,wght@1,400;1,500&family=Playfair+Display:wght@600&family=Poppins:wght@400;500&family=Roboto:wght@100;300;400;500;700&family=Vina+Sans&display=swap');
+}
+
+/* header part css */
+.header-main {
+    margin: 0;
+    padding: 30px 50px;
+    background-color: rgb(206, 204, 196);
+}
+
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar ul {
+    display: flex;
+}
+
+.nav-bar ul li {
+    list-style-type: none;
+    margin: 0px 10px;
+    padding: 5px 10px;
+}
+
+.nav-bar ul li:hover {
+    color: goldenrod;
+    background-color: rgb(240, 237, 201);
+    padding: 3px 5px;
+    border-radius: 8px;
+}
+
+
+/* home section css */
+
+.home-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 150px;
+}
+
+.my-details {
+    width: 50%;
+    padding: 10px 30px;
+
+}
+
+.my-details h1 {
+    font-size: 48px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.my-details p {
+    color: rgb(111, 110, 110);
+}
+
+.my-details button {
+    margin: 15px 0px;
+    padding: 10px 40px;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    background: linear-gradient(rgb(122, 122, 244), rgb(149, 216, 243));
+
+}
+
+.image-part {
+    width: 50%;
+    /* border: 2px solid; */
+}
+
+.image-part img {
+    width: 100%;
+}
+
+/* services part */
+.services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    margin: 50px 150px;
+
+}
+
+.services-item {
+    padding: 60px;
+    /* background-color:rgb(221, 246, 185);
+    border: 1px solid gray; */
+    border-radius: 8px;
+    text-align: center;
+}
+
+.services-item p {
+    color: gray;
+    padding: 10px;
+}
+
+.services-item h3 {
+    font-size: 30px;
+    padding: 10px;
+}
+
+.icon:hover {
+    color: blue;
+}
+
+
+@media only screen and (max-width: 600px) {
+    
+    .header-section {
+        display: inline-block;
+    }
+
+    .nav-bar ul {
+        display: inline-block;
+    }
+
+    .nav-bar ul li {
+        padding: 5px;
+    }
+
+    .home-section {
+        display: inline-block;
+        align-items: center;
+        margin: 10px 30px;
+    }
+    .my-details {
+        width: 100%;
+        padding: 10px 30px;
+
+    }
+    .my-details h1 {
+        font-size: 35px;
+    }
+
+    .image-part {
+        width: 100%;
+    }
+
+}
+
+
