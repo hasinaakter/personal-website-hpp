@@ -6,15 +6,17 @@
 
 /* header part css */
 .header-main {
-    margin: 0;
-    padding: 30px 50px;
-    background-color: rgb(206, 204, 196);
+    background-color: rgb(157, 156, 154);
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 
 .header-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 30px 40px;
 }
 
 .nav-bar ul {
@@ -25,6 +27,10 @@
     list-style-type: none;
     margin: 0px 10px;
     padding: 5px 10px;
+}
+.nav-bar ul li a{
+    text-decoration: none;
+    color: rgb(39, 39, 242);
 }
 
 .nav-bar ul li:hover {
@@ -42,6 +48,7 @@
     justify-content: space-between;
     align-items: center;
     margin: 50px 150px;
+
 }
 
 .my-details {
@@ -78,13 +85,14 @@
 
 .image-part img {
     width: 100%;
+    /* opacity: 0.5; */
 }
 
 /* services part */
 .services {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 30px;
+    grid-gap: 20px;
     max-width: 1200px;
     margin: auto;
 
@@ -107,10 +115,74 @@
     font-size: 30px;
     padding: 10px;
 }
-
+.icon{
+    font-size: 30px;
+}
 .icon:hover {
     color: blue;
 }
+
+.footer-part{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 30px;
+}
+
+.drop-down{
+    position: relative;
+    padding: 10px;   
+}
+
+#content{
+    position: absolute;
+    background-color: black;
+    width: 100px;
+    padding: 20px;
+    top: 90%;
+    display: none;
+}
+
+.drop-down:hover #content {
+    display: block;
+}
+
+#content a{
+    color: aliceblue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .drop-down{
+    position: relative;
+    padding: 30px;
+    display: inline-block;
+}
+
+.content{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+} */
+
+/* .drop-down:hover .content{
+    display: block;
+} */
+
 
 @media only screen and (max-width:600px) {
     /* body{
